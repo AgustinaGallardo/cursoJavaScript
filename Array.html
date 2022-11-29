@@ -1,0 +1,80 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Usando Arrays</title>
+  <link rel="stylesheet" href="css/micss.css">
+  <script>
+    //---ARRAYS---//
+      // var articulos = []; declaramos un Array vacio 
+       var articulos = ["Zapatillas","Camisa","Pantalon","Medias"];   
+     // Otra forma: var articulos = new Array ["Zapatillas","Camisa","Pantalon","Medias"]; (NOfunnciona)
+
+    
+  </script>
+  </head>
+  
+  <body>
+  <div class="contenedor">
+    <div class="header">
+      <p class="logo">JavaScript Arrays <i class="mm">Curso JavaScript
+       </i></p><i class="mm">
+    </i></div><i class="mm">
+    <div class="contenido">
+      <div class="principal">
+        <h1>Manejando Arrays</h1>
+        <script>
+      
+  
+      document.write("<p> El PRIMER articulo es <strong>");   //<strong> letra en negrita
+      document.write(articulos[0] + "</strong></p>");
+
+       //alert(articulos.length);
+
+       document.write("<p> El ULTIMO articulo es <strong>");
+       document.write(articulos[articulos.length-1] + "</strong></p>"); // Acceder al ultimo elemento del array sin saber ctos elem.tiene
+      
+      //Agregar elementos al cominezo del array
+
+        articulos.unshift("Pelota");
+
+        document.write("<p> Tambien agregar: <strong>");
+        document.write(articulos[0] + "</strong></p>");
+
+        document.write("<p> Nos olvidamos ademas de : <strong>");
+
+        articulos.push(prompt("Ingrese un articulo"));
+        document.write(articulos[articulos.length-1] + "</strong></p>"); 
+
+      //Para acceder a todos los elementos de array de la forma mas torpe, aca necesitamos un for 
+
+        document.write("<p>" + articulos[0] + "</br>");
+        document.write(articulos[1] + "</br>");
+        document.write(articulos[2] + "</br>");
+        document.write(articulos[3] + "</br>");
+        document.write(articulos[4] + "</br>");
+        document.write(articulos[5] + "</br></p>");
+
+        alert("Borraremos el primer elemento");
+       articulos.shift();
+
+       document.write("<p>" + articulos[0] + "</br>");
+        document.write(articulos[1] + "</br>");
+        document.write(articulos[2] + "</br>");
+        document.write(articulos[3] + "</br>");
+        document.write(articulos[4] + "</br></p>");
+      
+        alert("Borraremos el ultimo elemento");
+        articulos.pop();
+
+        document.write("<p>" + articulos[0] + "</br>");
+        document.write(articulos[1] + "</br>");
+        document.write(articulos[2] + "</br>");
+        document.write(articulos[3] + "</br></p>");
+
+      </script>
+       </div>
+    </div>
+    
+  </i></div><i class="mm">
+  
+  
+  </i></body>

@@ -1,0 +1,52 @@
+<html><head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScript</title>
+    <link rel="stylesheet" href="css/micss2.css">
+    <script>
+        // Declaracion de variables y concatenacion
+        var nombre = prompt("Ingrese su nombre...");
+        var apellido= prompt("Ingrese su apellido...");
+        var edad= prompt("Ingrese su edad...");
+        var resta= prompt("cuantos años te sacarias...");
+        edad-=resta 
+
+      //---ARRAYS---//
+      // var articulos = []; declaramos un Array vacio 
+      // var articulos = ["Zapatillas","Camisa","Pantalon","Medias"];   Otra forma:
+      var articulos = new Array ["Zapatillas","Camisa","Pantalon","Medias"];
+
+     
+
+     </Script>
+    </head>
+    
+    <body>
+    <div class="contenedor">
+    <div class="header">
+        <p class="logo">Curso JavaScript</p>
+    </div>
+    <div class="contenido">
+        <div class="principal">
+
+    <h1>Jugando con las variables</h1>
+    <script>
+//Entre comillas metemos codigo HTML 
+        document.write("<p>");
+        document.write("Bienvenido " + nombre + ", "+ apellido + "<br/>" + "Te gustaria tener "+ edad + " años");
+        document.write("</p>");
+
+    </Script>
+    <h2>Manejo de Arrays</h2>
+    <script>
+
+    document.write("<p> El primer articulo es <strong>");   //<strong> letra en negrita
+    document.write(articulos[0] + "</strong></p>");
+
+    alert(articulos.length);
+
+    </Script>
+    </div>
+    </div>    
+    </div>       
+    </body>
+    </html>
