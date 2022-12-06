@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>While</title>
+<style>
+ #contenedor{
+    width: 25%;
+    background-color:burlywood;
+    margin: auto;
+    padding: 15px;
+ }
+
+</style>
+<script>
+ var nombre, edad, nacionalidad;
+
+ nombre = prompt("Ingrese su nombre","Nombre"); //,"Nombre" aqui aparece escrito en txt para orientar al cliente
+ while(!isNaN(nombre))
+ {
+    nombre=prompt("Ingrese un nombre valido")
+ }
+ edad = prompt("Ingrese su edad","Edad");
+ while (edad<=0 || edad>105 || isNaN(edad))
+ {
+    edad=prompt("Ingrese una edad valida");
+ }
+ nacionalidad = prompt("Ingrese su nacionalidad","Nacionalidad");
+ while(!isNaN(nacionalidad))
+ {
+    nacionalidad=prompt("Ingrese una nacionalidad valida")
+ }
+
+</script>
+</head>
+<body>
+
+    <div id = "contenedor">
+<p>Nombre: 
+<script>document.write(nombre);</script>
+</p>
+<p>Edad: 
+<script>document.write(edad);</script>
+</p>
+<p>Nacionalidad:
+<script>document.write(nacionalidad);</script>
+</p>
+
+    </div>
+</body>
+</html>
