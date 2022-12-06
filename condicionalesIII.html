@@ -43,9 +43,9 @@ table{
 <script>
 
   var cuerpo = document.getElementById("cuerpo");
-  var colorWb = prompt("Ingrese el color del cuerpo, azul/verde/rojo");
+  var colorWb = prompt("Ingrese el color del cuerpo, azul/verde/rojo").toLowerCase(); //toLowerCase convierte todo lo q se ingrese a minusculas
   
-  if(colorWb == "azul")
+    if(colorWb == "azul")
   {
       cuerpo.style.backgroundColor="blue";
   }
@@ -57,12 +57,11 @@ table{
   {
       cuerpo.style.backgroundColor = "red";
   }
-  
-      </script> 
+  else if
+  (colorWb!="azul" && colorWb!="rojo" && colorWb!="verde")
+  {
+    alert("Ese color no existe!!");
+  }
 
-
-
-
-
-
+ </script> 
 </body></html>
