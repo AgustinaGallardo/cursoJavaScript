@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DO</title>    
+   
+</head>
+<body>
+     <table width ="25%" border="0">
+        <tr>
+            <td><label for="textfield" > </label>
+            <input type="text" name="textfield" id ="c_mensaje"> </td>
+            <td><label for="textfield2"></label>
+            <input type="text" name="textfield2" id ="c_intentos"> </td>
+         </tr>
+    </table>
+    <script>
+
+        var aleatorio = Math.round(Math.random()*100);
+        var miNum, intentos;
+        var mensaje = document.getElementById("c_mensaje");
+        var intentosConsumidos = document.getElementById("c_intentos");
+        intentos=0;
+        miNum=0;
+ 
+        do
+        {
+         miNum = prompt ("Ingrese un numero del 1 al 100");
+         if(aleatorio>miNum)
+         {
+         mensaje.value="Mas alto";
+         mensaje.style.fontSize="18px";
+         } 
+         if(aleatorio<miNum)
+         {
+            mensaje.value="Mas bajo";
+            mensaje.style.fontSize="18px";
+         }
+
+         intentos++;
+
+         intentosConsumidos.value=intentos;
+         intentosConsumidos.style.fontSize="18px";
+         intentosConsumidos.style.color="red";
+         intentosConsumidos.style.textAlign="center";
+
+        }
+        while (aleatorio != miNum);
+ 
+      mensaje.value="Correcto!!";
+      mensaje.style.color="red";
+ 
+    
+     </script>
+</body>
+</html>
