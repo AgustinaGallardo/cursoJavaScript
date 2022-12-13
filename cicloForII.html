@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ForII</title>
+    
+    <script>
+       var trabajadores = new Array();
+       var persona = "";
+       var contador = 0;
+
+       while (persona != "salir"){
+        persona = prompt("Ingrese el nombre del trabajador, si no existen mas, ingrese salir");
+        trabajadores[contador]=persona;
+        contador++;
+       }
+       trabajadores.pop(); // aca para eliminar el ultimo salir , con pilasYcolas
+
+       for (var i=0; i<trabajadores.length;i++){
+        document.write(trabajadores[i] + "<br/>");
+       }
+
+
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>
